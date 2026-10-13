@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Mean coefficient and mean model SE (in parentheses) across network-specific final greedy models, by visibility group ($n=216$; one network excluded due to non-convergence). $N$ is the number of networks whose final model included each term. Stars indicate mean~coef / mean~SE $\geq 1.96$ ($^*$), $2.58$ ($^{**}$), or $3.29$ ($^{***}$), reflecting average within-model precision. Terms with $N \leq 3$ appear in very few networks; their entries are included for completeness but should not be treated as evidence of cross-network generalizability.}
+\label{tab:final_coefs}
+\begin{tabular}{lcrcrr}
+\toprule
+& \multicolumn{2}{c}{High-vis} & \multicolumn{2}{c}{Low-vis} & Overall ($n=216$) \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Term & Mean (SE) & $N$ & Mean (SE) & $N$ & Mean (SE) \\
+\midrule
+\multicolumn{6}{l}{\textit{Forward-dyad history}} \\
+\quad SndInitiation & 1.192 (0.188)*** & 103 & 2.543 (0.128)*** & 103 & 1.867 (0.158)*** \\
+\quad Repetition & 1.289 (0.292)*** & 103 & 2.952 (0.084)*** & 103 & 2.120 (0.188)*** \\
+\multicolumn{6}{l}{\textit{Reverse-dyad history}} \\
+\quad RecRecencyRank & 1.603 (0.148)*** & 103 & 1.239 (0.050)*** & 92 & 1.431 (0.102)*** \\
+\quad RecRecencyLog & -0.056 (0.088) & 2 & -0.530 (0.010)*** & 1 & -0.214 (0.062)*** \\
+\quad RRecInitiation & 0.256 (0.416) & 2 & -0.400 (0.070)*** & 1 & 0.037 (0.301) \\
+\quad WeightedRec & -0.073 (0.210) & 41 & -0.181 (0.055)** & 93 & -0.148 (0.102) \\
+\multicolumn{6}{l}{\textit{Popularity, sender activity, triadic}} \\
+\quad Imitation & 0.237 (0.222) & 38 & -0.084 (0.056) & 84 & 0.016 (0.107) \\
+\quad OutDegSnd & 1.409 (0.222)*** & 88 & 1.564 (0.076)*** & 80 & 1.483 (0.153)*** \\
+\quad DyadRecency & -0.343 (0.089)*** & 2 & -0.104 (0.010)*** & 1 & -0.263 (0.062)*** \\
+\quad NOTPSnd & 0.667 (0.132)*** & 100 & 0.676 (0.100)*** & 95 & 0.672 (0.117)*** \\
+\quad NITPSnd & 0.495 (0.144)*** & 60 & 0.128 (0.097) & 79 & 0.287 (0.117)* \\
+\multicolumn{6}{l}{\textit{Sequential ordering}} \\
+\quad IOviolation & -0.593 (0.145)*** & 101 & -0.389 (0.041)*** & 105 & -0.489 (0.092)*** \\
+\bottomrule
+\end{tabular}
+\end{table}

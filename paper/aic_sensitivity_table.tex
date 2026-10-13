@@ -1,0 +1,31 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Three sensitivity criteria for the robust endogenous baseline, each
+reported as the domain-weighted proportion of networks where the term ranks
+in the top four on the relevant criterion. \textit{Greedy top-4}: top-four
+greedy selection steps (main analysis, $N=217$). \textit{Univariate top-4}:
+top-four by step-1 univariate AIC rank (path-independent). \textit{TOO-12
+top-4}: top-four by AIC increase when dropped from the full 12-term joint
+model (most costly to remove).}
+\label{tab:aic_sensitivity}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Term} & \textbf{Greedy top-4} & \textbf{Univ.\ top-4} & \textbf{TOO-12 top-4} \\
+\midrule
+  SndInitiation  & 94\% & 89\% & 95\% \\
+  IOviolation    & 91\% & 31\% & 95\% \\
+  Repetition     & 61\% & 82\% & 58\% \\
+  RecRecencyRank & 55\% & 54\% & 57\% \\
+\midrule
+  OutDegSnd      & 33\% &  2\% & 39\% \\
+  Imitation      & 23\% & 80\% &  3\% \\
+  NOTPSnd        & 17\% & 15\% & 23\% \\
+  NITPSnd        & 12\% &  1\% &  2\% \\
+  WeightedRec    & 11\% & 47\% & 29\% \\
+  DyadRecencyLog &  3\% &  0\% &  0\% \\
+  RRecInitiation &  0\% &  0\% &  0\% \\
+  RecRecencyLog  &  0\% &  0\% &  0\% \\
+\bottomrule
+\end{tabular}
+\end{table}

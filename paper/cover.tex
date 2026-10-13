@@ -1,0 +1,81 @@
+\documentclass[11pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[top=2.5cm, bottom=2.5cm, right=3cm, left=3cm]{geometry}
+\usepackage{url}
+
+\signature{C. Ben Gibson\\
+RAND Corporation\\
+\texttt{cbengibson@gmail.com}}
+
+\address{C. Ben Gibson\\
+RAND Corporation\\
+1776 Main Street\\
+Santa Monica, CA 90401}
+
+\begin{document}
+
+\begin{letter}{The Editors\\
+\textit{Social Networks}}
+
+\opening{Dear Editors,}
+
+I am pleased to submit for your consideration the manuscript ``These Four First:
+A Robust Endogenous Baseline for Relational Event Sequences,'' which I am
+submitting as an original research article to \textit{Social Networks}.
+
+Applied researchers using relational event models (REMs) face a recurring
+specification problem: a growing catalogue of endogenous statistics is available,
+but no consensus exists on which subset any well-specified model must include.
+Omitting a consistently important endogenous term is not a minor oversight ---
+its signal redistributes across the remaining predictors, potentially biasing
+coefficients on the exogenous covariates of substantive interest. Yet including
+all available statistics risks convergence failures, overfitting, and tangled
+interpretation. The field has lacked empirical guidance on where to start.
+
+This paper provides that guidance. I apply greedy forward AIC selection to 217
+directed interaction sequences spanning ten social domains --- private messaging,
+email, phone communication, face-to-face interaction, gang violence, and
+international conflict --- and identify which endogenous statistics are
+\emph{consistently first-selected} regardless of domain. The answer is four
+terms, and the gap to the fifth is sharp. IOviolation (participation-shift
+violations), SndInitiation (prior sender initiation), Repetition (normalized
+dyadic send-share), and RecRecencyRank (rank-based reverse-dyad recency) each
+appear in the greedy top-four of over 55\% of domains (domain-weighted), with a
+22-percentage-point drop to the next candidate. Together they recover
+approximately 97\% of the AIC improvement achievable across the twelve-term
+candidate set. Two path-independent sensitivity criteria --- univariate AIC rank
+and take-one-out from the full joint model --- corroborate the greedy result.
+
+Several findings are of broader theoretical interest. First, the two most
+prominently discussed mechanisms in the network literature --- imitation
+(preferential attachment) and triadic closure --- do not belong in this baseline:
+their signal is almost entirely absorbed by forward-dyad history once
+SndInitiation and Repetition enter the model. Second, the ecological split
+between high- and low-visibility interaction settings is consequential:
+imitation is a serious candidate for inclusion in high-visibility contexts
+(40\% top-four frequency) but negligible in private communication (5\%). Third,
+the consistent early selection of SndInitiation --- a binary absorbing state
+partitioning the risk set into first-contact and return-contact events ---
+motivates a separable modeling approach, pointing toward a productive direction
+for future methodological work.
+
+I believe this manuscript is well suited to \textit{Social Networks} for several
+reasons. It speaks directly to the practice of network analysis across
+substantive domains represented in the journal's readership. It engages
+methodological literature the journal has published (including work on REM
+specification, goodness of fit, and sampling), and its cross-domain empirical
+scope is consistent with the journal's emphasis on general structural and
+dynamic network phenomena. The finding that a compact four-term baseline spans
+settings from classroom interaction to gang violence is, I hope, of genuine
+interest to the journal's broad readership.
+
+This manuscript has not been previously published and is not under review
+elsewhere. The datasets used are drawn from previously published corpora; full
+descriptions and citations are provided in the appendix.
+
+Thank you for your consideration.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

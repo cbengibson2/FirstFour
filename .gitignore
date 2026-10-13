@@ -1,0 +1,8 @@
+# R session artifacts
+.Rhistory
+.RData
+.Rproj.user/
+.RDataTmp
+
+# macOS
+.DS_Store
